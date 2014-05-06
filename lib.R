@@ -27,7 +27,7 @@ plot4 <- function() {
 	par(mfcol=c(2,2))
 	with(consumption, {
 		 plot1()
-		 plot2()
+		 plot3()
 		 plot(Voltage ~ DateTime, type="n")
 		 lines(DateTime, Voltage, lty=1)
 		 plot(Global_reactive_power ~ DateTime, type="n")
