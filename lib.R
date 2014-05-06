@@ -28,9 +28,9 @@ plot4 <- function() {
 	with(consumption, {
 		 plot1()
 		 plot3()
-		 plot(Voltage ~ DateTime, type="n")
+		 plot(Voltage ~ DateTime, type="n", xlab="datetime")
 		 lines(DateTime, Voltage, lty=1)
-		 plot(Global_reactive_power ~ DateTime, type="n")
+		 plot(Global_reactive_power ~ DateTime, type="n", xlab="datetime")
 		 lines(DateTime, Global_reactive_power, lty=1)})
 }
 
